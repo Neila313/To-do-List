@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style media="screen">
+       #mydiv{
+         border-radius: 20px;
+       }
+      .bare{text-decoration:line-through;}
+      #Listname, #Listveille{
+        list-style: none;
+      }
+    </style>
+</head>
+<body class="alert alert-dark">
+
+
+
+        <div class="p-3 mb-2 bg-white text-dark container col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="mydiv">
+            <input type="text" id="userInput" placeholder="Name" class="form-control">
+            <button id="enter"  class="btn btn-info">
+                add
+            </button>
+            <h3>Student Name</h3>
+            <ul id="Listname" >
+
+            </ul>
+
+            <input type="text" id="veilleInput" placeholder="Subject" class="form-control">
+            <button id="assign"  class="btn btn-info">
+                assign
+            </button>
+            <h3>Veille Name</h3>
+            <ul id="Listveille" class="myList">
+
+            </ul>
+
+            <button id="refresh"  class="btn btn-outline-danger">
+                Refresh
+            </button>
+
+            <button id="clear"  class="btn btn-outline-danger" onclick="dataClear()">
+                Clear
+            </button>
+        </div>
+
+        <script src="app.js"></script>
+
+
+
+</body>
+</html>
